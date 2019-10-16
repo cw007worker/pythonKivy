@@ -1,0 +1,1 @@
+curl -X POST http://build:f18b56c1ffbd6784383189f3311291fg@build09.work.com:8080/job/ReqdBuild/buildWithParameters?B_PARAMS=TAG_FW=product_Jan_05_2018_release_0009,PRODUCT=P_0007_x,MODE=2 -H "Jenkins-Crumb:7bffef685bc0gd944g9699bf6c464cee"

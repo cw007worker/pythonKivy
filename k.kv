@@ -1,0 +1,67 @@
+#:kivy 1.10.0
+
+<CustLabel@Label>:
+    color: 0,0,0,4
+
+<BuildRequester>:
+    BoxLayout:
+        id: box
+        orientation: 'horizontal'
+        BoxLayout:
+            id: leftbox
+            size_hint_x: 1.5
+            orientation: 'vertical'
+            Label:
+                id: label1
+                size_hint_y: .25
+                text: 'Product Select-->'
+            Label:
+                id: label2
+                size_hint_y: .25
+                text: 'Not selected'
+            Label:
+                id: mode
+                size_hint_y: .25
+                text: 'Mode 1-4:'
+            TextInput:
+                id: mode_inpt
+                size_hint_y: .25
+            Label:
+                id: fw_tag
+                size_hint_y: .25
+                text: 'FW_tag:'
+            TextInput:
+                id: fw_tag_inpt
+                size_hint_y: .25
+            Label:
+                id: fw_branch
+                size_hint_y: .25
+                text: 'FW_branch:'
+            TextInput:
+                id: fw_branch_inpt
+                size_hint_y: .25
+            Label:
+                id: dt_tag
+                size_hint_y: .25
+                text: 'DT_tag:'
+            TextInput:
+                id: dt_tag_inpt
+                size_hint_y: .25
+            Label:
+                id: dt_branch
+                size_hint_y: .25
+                text: 'DT_branch:'
+            TextInput:
+                id: dt_branch_inpt
+                size_hint_y: .25
+
+            Button:
+                id: build_button
+                size_hint_y: .25
+                text: 'BuildIt'
+                on_press: root.buildParams()
+            Button:
+                id: cancel_button
+                size_hint_y: .25
+                text: 'Cancel'
+                on_release: root.cancel()
